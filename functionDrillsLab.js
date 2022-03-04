@@ -92,6 +92,13 @@ console.log(compareNums(5, 6));
 */
 
 //CODE HERE
+add = (a, b) => {
+  parseInt(a);
+  parseInt(b);
+  return a + b;
+}
+let sum = add(2, 5);
+console.log(sum);
 
 
 ////////////////// PROBLEM 7 ////////////////////
