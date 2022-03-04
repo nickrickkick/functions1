@@ -55,7 +55,11 @@ printName("kyle");
 */
 
 //CODE HERE
-
+function greeting(name) {
+  String(name);
+  console.log("Hello, " + name);
+}
+greeting("jack");
 
 ////////////////// PROBLEM 5 ////////////////////
 
