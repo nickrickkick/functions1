@@ -286,16 +286,17 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-theEliminator = (loser, ...contestants) => {
+theEliminator = (lozer, ...contestants) => {
   //let newArr = [...contestants];
   for (i = 0; i < contestants.length; i++){
-    if (loser === contestants[i]){
+    if (lozer === contestants[i]){
       contestants.splice(i, 1);
     }
   }
   return contestants;
+  
 }
-console.log(theEliminator(...contestants, loser));
+console.log(theEliminator(loser, ...contestants));
 
 
 ////////////////// PROBLEM 17 ////////////////////
