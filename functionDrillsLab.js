@@ -73,7 +73,15 @@ greeting("jack");
 */
 
 //CODE HERE
-
+compareNums = (a, b) => {
+ /* if (a >= b){
+    return a;
+  } else {
+    return b;
+  } **/
+  return (a >= b ? a : b);
+}
+console.log(compareNums(5, 6));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
