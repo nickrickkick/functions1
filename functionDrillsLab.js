@@ -218,7 +218,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 printAllNames = (...names) => {
-  for(i = 1; i < names.length; i++){
+  for(i = 0; i < names.length; i++){
       console.log(names[i]);
   }
 }
@@ -266,6 +266,15 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+bigOrSmall = (...arr) => {
+  let answers = [];
+  for (i = 0; i < arr.length; i++){
+    arr[i] > 100 ? answers.push("big") : answers.push("small");
+  }
+  return answers;
+}
+let arrayEvaluator = (bigOrSmall(...bigOrSmallArray));
+console.log(arrayEvaluator);
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -277,6 +286,16 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+theEliminator = (loser, ...contestants) => {
+  //let newArr = [...contestants];
+  for (i = 0; i < contestants.length; i++){
+    if (loser === contestants[i]){
+      contestants.splice(i, 1);
+    }
+  }
+  return contestants;
+}
+console.log(theEliminator(...contestants, loser));
 
 
 ////////////////// PROBLEM 17 ////////////////////
