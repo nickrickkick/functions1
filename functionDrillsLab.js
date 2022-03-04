@@ -15,7 +15,7 @@
 function helloWorld() {
   console.log("Hello, World!");
 }
-helloWorld();
+//helloWorld();
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -25,7 +25,10 @@ helloWorld();
 */
 
 //CODE HERE
-
+function jsNinja() {
+  return String("I am a JavaScript ninjs!");
+}
+console.log(jsNinja());
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -83,8 +86,8 @@ helloWorld();
   Uncomment the answer underneath.
 */
 
-const exclaim = function(str) {
-  return str.toUpperCase() + '!!!'
+function exclaim(str) {
+  return str.toUpperCase() + '!!!';
 }
 
 // arrow
