@@ -234,6 +234,9 @@ printAllNames(...namesArr);
 */
 
 //CODE HERE
+thatsOdd = num => num % 2 === 0 ? "That's not odd!" : "That is odd indeed!";
+let oddChecker = thatsOdd(1);
+console.log(oddChecker);
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -247,6 +250,8 @@ printAllNames(...namesArr);
 */
 
 //CODE HERE
+bestMovie = title => `${title} is the best movie ever!`;
+console.log(bestMovie("Color Out of Space"));
 
 
 ////////////////// PROBLEM 15 ////////////////////
