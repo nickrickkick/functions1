@@ -26,9 +26,9 @@ function helloWorld() {
 
 //CODE HERE
 function jsNinja() {
-  return String("I am a JavaScript ninjs!");
+  return String("I am a JavaScript ninja!");
 }
-console.log(jsNinja());
+//console.log(jsNinja());
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -38,7 +38,10 @@ console.log(jsNinja());
 */
 
 //CODE HERE
-
+function printName(name) {
+  console.log(name);
+}
+printName("kyle");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
