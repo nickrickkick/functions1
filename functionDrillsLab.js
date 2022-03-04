@@ -155,7 +155,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+let declaration2 = true;
 // expression
 
 
@@ -169,6 +169,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+nameCheck = name => {
+  if (name === "Steven"){
+    return "What is up Steven?";
+  } else if (name === "Bryan"){
+    return "Hey, Bryan!";
+  } else {
+    return `Cool name, ${name}`;
+  }
+}
+let nameGreeting = nameCheck("Steven");
+console.log(nameGreeting);
 
 
 ////////////////// PROBLEM 11 ////////////////////
