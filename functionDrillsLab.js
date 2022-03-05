@@ -359,7 +359,7 @@ console.log(getTheFrogo(10));
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+//CODE HERE ^^^^^
 
 
 ////////////////// PROBLEM 21 ////////////////////
@@ -369,6 +369,23 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+ascend = (...arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    const currentValue = arr[i]
+    const nextValue = arr[i + 1]
+
+    if (currentValue > nextValue) {
+      return false
+    }
+  }
+
+  return true
+}
+
+const arrayIsAscending = ascend(sampleArray)
+
+console.log({ arrayIsAscending });
+
 
 
 ////////////////// PROBLEM 22 ////////////////////
@@ -393,13 +410,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = [duck]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = [rubberDuck, sailorDuck]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = [sailorDuck]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = [realDuck]
