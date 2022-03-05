@@ -307,6 +307,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+upperCaseIt = str => {
+  console.log(`${str.toUpperCase()}`);
+}
+upperCaseIt(sampleString);
 
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -319,6 +323,22 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+emailCheck = email => {
+  let checkAt = false;
+  let response = '';
+  String(email.trim());
+  for (let i = 0; i < email.length; i++){
+   let character = email.charAt(i);
+    if (character === '@'){
+      checkAt = true;
+    }
+  }
+  checkAt === true ?  response ='email verified' : response = 'must provide a valid email address';
+  return response;
+}
+
+console.log(emailCheck("michaelnowlin5@gmail.com"));
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
