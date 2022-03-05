@@ -347,6 +347,11 @@ console.log(emailCheck("michaelnowlin5@gmail.com"));
 */
 
 //CODE HERE
+getTheFrogo = willToPay => {
+ let totalFrogs = Math.floor(willToPay / 3);
+ return totalFrogs;
+}
+console.log(getTheFrogo(10));
 
 
 ////////////////// PROBLEM 20 ////////////////////
